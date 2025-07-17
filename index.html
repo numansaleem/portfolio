@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
     <!-- <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
             rel="stylesheet"
         /> -->
-    <title>Sass Portfolio</title>
+    <title>Numan Saleem</title>
     <!-- aos animation pkg -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -56,7 +59,7 @@
           </li>
           <li class="social-link">
             <a target="_blank" href=""
-              ><img src="Images/Icons/twitter.png" alt="Twitter"
+              ><img src="Images/Icons/icons8-x-50.png" alt="X"
             /></a>
           </li>
         </ul>
@@ -196,18 +199,16 @@
       <div class="left">
         <div class="inner transition2">
           <h1 class="subtitle">About Me</h1>
-          <p class="title">Web Developer</p>
+          <p class="title">Full-Stack Developer</p>
           <p class="about-desc desc">
-            I am a Top Rated Software Engineer with 10+ years of experience in
-            software design and development.<br />
-            My core expertise are<br />
-            ✓ Backend: C#, .Net Core, ASP.NET (MVC, API), PHP, NodeJS <br />✓
-            Frontend: Angular, React, Kendo, jQuery <br />✓ Databases: MS SQL,
-            MySQL, SQLite, Firebase <br />✓ ORM: Entity Framework, NHibernate,
-            Dapper<br />
-            ✓ Hosting: Azure, AWS, Shared hosting, VPS<br />
-            ✓ Version control: Bitbucket, GitHub <br />✓ Legacy: ASP.NET
-            WebForms, Telerik, DevExpress, C# WinForms, Console apps.
+            I’m a seasoned full-stack developer with a track record of building robust, high-performance applications tailored to business needs. My expertise spans both back-end and front-end development, with a strong focus on scalability, security, and best practices.<br />
+            Key Skills & Technologies:<br />
+            ✓ Back-End: .NET Core, .NET MVC, Web API, Entity Framework, SignalR, CQRS, Clean &nbsp;&nbsp;&nbsp;&nbsp;Architecture, Node.js, Nest.js, PHP, Python, REST APIs, JWT<br />
+            ✓ Front-End: Angular (Universal, Material, NgRx), React.js (Redux, Next.js), &nbsp;&nbsp;&nbsp;&nbsp;JavaScript/TypeScript, jQuery, CSS3, Bootstrap, Tailwind, Flutter <br />
+            ✓ Database: MSSQL, PostgreSQL, MongoDB<br />
+            ✓ DevOps & Cloud: Azure DevOps, GitHub Actions, CI/CD, Microsoft Azure, AWS<br />
+            ✓ Integrations: Google APIs, QuickBooks, Twilio, ZOHO CRM, SendGrid, Zapier<br />
+            ✓ Version control: Bitbucket, GitHub <br />
           </p>
         </div>
       </div>
@@ -223,9 +224,10 @@
             </div>
             <p class="skill-title title">Front-end</p>
             <p class="skill-desc desc">
-              HTML, CSS, Tailwind, JavaScript, React, Angular
+              Next.js, React, Angular, JavaScript, Tailwind, HTML, CSS
             </p>
           </li>
+
           <li class="transition2" data-aos="zoom-in-down">
             <div class="icon-container two">
               <img src="Images/Icons/dot-net.png" alt=".Net" />
@@ -244,6 +246,13 @@
               Telerik, DevExpress, C# WinForms, Console apps.
             </p>
           </li>
+          <li class="transition2" data-aos="zoom-in-down">
+            <div class="icon-container one">
+              <img src="Images/Icons/icons8-flutter-logo-96.svg" alt="Flutter" />
+            </div>
+            <p class="skill-title title">Mobile Apps</p>
+            <p class="skill-desc desc">Flutter, Firebase, React Native, Ionic, .NET MAUI</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -261,10 +270,126 @@
     <!-- #5 projects Section -->
     <div id="project_section">
       <section class="work projects-container">
-        <div class="work-container" data-aos="zoom-in-down">
-          <div class="work-left">
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
             <div class="inner">
               <p class="subtitle">Project 1</p>
+              <p class="work-title title">HUB (e-commerce)</p>
+              <p class="work-desc desc">
+                Next.js, .NET Core, Bootstrap, JavaScript, MSSQL
+              </p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/hub1.png" alt="HUB homepage"/></div>
+              <div><img src="/Images/Projects/hub3.png" alt="HUB Products"/></div>
+              <div><img src="/Images/Projects/hub2.png" alt="HUB Login"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 2</p>
+              <p class="work-title title">Application Tracking System</p>
+              <p class="work-desc desc">React, Asp.Net, Email Integrations, QuickBooks</p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/ATS.png" alt="ATS Homepage"/></div>
+              <div><img src="/Images/Projects/ATS2.png" alt="ATS Login"/></div>
+              <div><img src="/Images/Projects/ATS3.png" alt="ATS UserInfo"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 3</p>
+              <p class="work-title title">Bogo Nation</p>
+              <p class="work-desc desc">Next.js, .NET Core, Bootstrap, JavaScript, MSSQL, Stripe</p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/bogoNation.png" alt="bogoNation Homepage"/></div>
+              <div><img src="/Images/Projects/bogoNation1.png" alt="bogoNation deal"/></div>
+              <div><img src="/Images/Projects/bogoNation3.png" alt="bogoNation deal"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 4</p>
+              <p class="work-title title">Shift Tracker</p>
+              <p class="work-desc desc">Flutter, .Net Core</p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/sf.png" alt="Shift Tracker Sign In"/></div>
+              <div><img src="/Images/Projects/sf2.png" alt="Shift Tracker "/></div>
+              <div><img src="/Images/Projects/sf3.png" alt="Shift Tracker checkout"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 5</p>
+              <p class="work-title title">Enswitch</p>
+              <p class="work-desc desc">AngularJS, Perl, Python, AssemblyAI</p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/en.png" alt="Enswitch Login"/></div>
+              <div><img src="/Images/Projects/en2.png" alt="Enswitch Dashboard"/></div>
+              <div><img src="/Images/Projects/en3.png" alt="Enswitch Features Codes"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 6</p>
+              <p class="work-title title">OtisFire (Services)</p>
+              <p class="work-desc desc">PHP, Bootstrap, JavaScript</p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/otisfire.png" alt="OtisFire Homepage"/></div>
+              <div><img src="/Images/Projects/otisfire2.png" alt="OtisFire Services"/></div>
+              <div><img src="/Images/Projects/otisfire3.png" alt="OtisFire"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 7</p>
               <p class="work-title title">Foodyx (POS)</p>
               <p class="work-desc desc">
                 WPF, VB .NET, Crystal Reports, .NET, Email Integration, Web
@@ -272,73 +397,81 @@
               </p>
             </div>
           </div>
-          <a href="#"><img src="Images/Projects/foodyx.png" alt="Foodyx" /></a>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/foodyx.png" alt="Foodyx POS"/></div>
+              <div><img src="/Images/Projects/foodyx2.png" alt="foodyx Dashboard"/></div>
+              <div><img src="/Images/Projects/foodyx.png" alt="foodyx"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
         </div>
-        <div class="work-container" data-aos="zoom-in-down">
-          <div class="work-left">
+
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
             <div class="inner">
-              <p class="subtitle">Project 2</p>
-              <p class="work-title title">FMS (Dashboard)</p>
+              <p class="subtitle">Project 8</p>
+              <p class="work-title title">Facilitation Management System</p>
               <p class="work-desc desc">
                 .NET, Bootstrap, Javascript, MSSQL, RDLC Reports, APIs, Zapier,
                 QuickBooks
               </p>
             </div>
           </div>
-          <a href="#"
-            ><img src="Images/Projects/fms_dashboard.png" alt="Dashboard"
-          /></a>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/FMS.png" alt="FMS Dashboard"/></div>
+              <div><img src="/Images/Projects/FMS2.png" alt="FMS Work Order Management"/></div>
+              <div><img src="/Images/Projects/FMS3.png" alt="FMS Invoice"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
         </div>
-        <div class="work-container" data-aos="zoom-in-down">
-          <div class="work-left">
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
             <div class="inner">
-              <p class="subtitle">Project 3</p>
-              <p class="work-title title">RMS (Dashboard)</p>
+              <p class="subtitle">Project 9</p>
+              <p class="work-title title">Restoration Management System</p>
+              <p class="work-desc desc">.NET, Bootstrap, Javascript, MSSQL, RDLC Reports, APIs, Zapier,
+                QuickBooks</p>
+            </div>
+          </div>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/RMS.png" alt="RMS Dashboard"/></div>
+              <div><img src="/Images/Projects/RMS2.png" alt="RMS Projects"/></div>
+              <div><img src="/Images/Projects/RMS3.png" alt="RMS Invoice"/></div>
+            </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        </div>
+        <div class="work-container">
+          <div class="work-left" data-aos="fade-up-right">
+            <div class="inner">
+              <p class="subtitle">Project 10</p>
+              <p class="work-title title">Glossy Decors (e-commerce)</p>
               <p class="work-desc desc">Wordpress, WooCommerce, Bootstrap</p>
             </div>
           </div>
-          <a href="#"
-            ><img src="Images/Projects/rms_dashboard.png" alt="fms_dashboard"
-          /></a>
-        </div>
-        <div class="work-container" data-aos="zoom-in-down">
-          <div class="work-left">
-            <div class="inner">
-              <p class="subtitle">Project 4</p>
-              <p class="work-title title">Nest Mart (E-Commerce)</p>
-              <p class="work-desc desc">
-                .NET Core, Bootstrap, Javascript, MSSQL
-              </p>
+          <div class="glider-contain" data-aos="fade-up-left">
+            <div class="glider">
+              <div><img src="/Images/Projects/glossy.png" alt="glossy"/></div>
+              <div><img src="/Images/Projects/glossy2.png" alt="glossy"/></div>
+              <div><img src="/Images/Projects/glossy3.png" alt="glossy"/></div>
             </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
           </div>
-          <a href="#"
-            ><img src="Images/Projects/nest_mart.png" alt="Nest Mart"
-          /></a>
         </div>
-        <div class="work-container" data-aos="zoom-in-down">
-          <div class="work-left">
-            <div class="inner">
-              <p class="subtitle">Project 5</p>
-              <p class="work-title title">OtisFire (Services)</p>
-              <p class="work-desc desc">PHP, Bootstrap, Javascript</p>
-            </div>
-          </div>
-          <a href="#"
-            ><img src="Images/Projects/otisfire.png" alt="OtisFire"
-          /></a>
-        </div>
-        <div class="work-container" data-aos="zoom-in-down">
-          <div class="work-left">
-            <div class="inner">
-              <p class="subtitle">Project 6</p>
-              <p class="work-title title">Glossy Decors (E-Commerce)</p>
-              <p class="work-desc desc">Wordpress, WooCommerce, Bootstrap</p>
-            </div>
-          </div>
-          <a href="#"
-            ><img src="Images/Projects/glossy_decors.png" alt="Glossy Decors"
-          /></a>
-        </div>
+        
+        
       </section>
       <!-- <section class="work projects-container" id="desktopProjects">
         <div>
@@ -414,5 +547,6 @@
       AOS.init();
       //
     </script>
+    <script src="./index.js"></script>
   </body>
 </html>

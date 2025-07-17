@@ -184,13 +184,16 @@ section {
   margin: 0 auto;
 }
 .skills-container ul li .icon-container.one {
-  width: 5em;
+  width: 3em;
 }
 .skills-container ul li .icon-container.two {
-  width: 4em;
+  width: 3em;
 }
 .skills-container ul li .icon-container.three {
-  width: 4em;
+  width: 3em;
+}
+.skills-container ul li .icon-container.four {
+  width: 3em;
 }
 .skills-container ul li .skill-title {
   font-weight: bold;
@@ -240,9 +243,91 @@ section {
 .projects-container {
   display: block; /* Show all projects by default */
   padding-top: 6em;
+  margin-bottom: 20px;
 }
 .hidden {
   display: none; /* Hide Section with this class */
+}
+.glider-contain {
+  max-width: 550px;
+  width: 100%;
+ aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+  display: flex;
+}
+.glider{
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 16px;
+   margin-bottom: 1em;
+}
+.glider img {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  height: 100%;
+  object-position:top;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.glider-prev,
+.glider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.glider-prev {
+  left: 10px;
+}
+
+.glider-next {
+  right: 10px;
+}
+
+.glider-prev:focus,
+.glider-next:focus {
+  outline: none;
+}
+.glider-prev,
+.glider-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.glider-contain:hover .glider-prev,
+.glider-contain:hover .glider-next {
+  opacity: 1;
+}
+
+.dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.dots .glider-dot.active {
+  background-color: #a18cd1;
 }
 
 .work {
@@ -269,6 +354,7 @@ section {
   }
   .about,
   .work-container {
+    margin-bottom: 25px;
     display: grid;
     grid-template-columns: 60% auto;
   }
@@ -301,7 +387,7 @@ section {
   }
   .skills-container ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 1em;
   }
   #stack-Bar {
@@ -315,11 +401,53 @@ section {
   .work {
     padding-top: 6em;
   }
-  .work-container img {
+.glider-contain {
+  max-width: 550px;
+  width: 100%;
+ aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.glider{
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 16px;
+   margin-bottom: 1em;
+}
+.glider img {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  height: 100%;
+  object-position:top;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.glider-prev:focus,
+.glider-next:focus {
+  outline: none;
+}
+
+.glider-prev,
+.glider-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glider-contain:hover .glider-prev,
+.glider-contain:hover .glider-next {
+  opacity: 1;
+}
+
+  /* .work-container img {
     margin-left: 1em;
-    width: 95%;
+    width: 100%;
     margin-top: 2em;
-  }
+  } */
 }
 @media only screen and (min-width: 991px) {
   .hero {
@@ -393,10 +521,53 @@ section {
     font-size: large;
     padding: 7em 1em 0.8em 1em;
   }
-  .work img {
+  /* .work img {
     float: right;
     max-width: 500px;
-  }
+  } */
+.glider-contain {
+  max-width: 550px;
+  width: 100%;
+ aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.glider{
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 16px;
+   margin-bottom: 1em;
+}
+
+.glider img {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  height: 100%;
+  object-position:top;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.glider-prev:focus,
+.glider-next:focus {
+  outline: none;
+}
+
+.glider-prev,
+.glider-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glider-contain:hover .glider-prev,
+.glider-contain:hover .glider-next {
+  opacity: 1;
+}
+
 }
 @media only screen and (min-width: 1250px) {
   header {
